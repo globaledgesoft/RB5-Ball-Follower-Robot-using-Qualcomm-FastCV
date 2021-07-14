@@ -1,4 +1,4 @@
-# RB5 Ball Follower Robot Using FASTCV 
+# RB5 Ball Follower Robot Using Qualcomm's FastCV 
 
 ## Introduction
 This project is intended to build and deploy an ball follower robot application on the Qualcomm  RB5 Robotics platform that detects a ball object and track that detected ball using Qualcomm’s FastCV.
