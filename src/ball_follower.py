@@ -26,7 +26,7 @@ class BallFollow(Node):
         self.ball_tracker = libball.ball_tracking
         self.ball_tracker.restype = POINTER(c_int)
 
-        self.cap = cv2.VideoCapture(0)
+        self.cap = cv2.VideoCapture("qtiqmmfsrc name=qmmf ! video/x-raw, format=NV12, width=640, height=480, framerate=30/1 ! videoconvert ! video/x-raw,format=BGR ! appsink drop=1", cv2.CAP_GSTREAMER)
 
         qos = QoSProfile(depth=10)
         self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', qos)
